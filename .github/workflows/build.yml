@@ -59,6 +59,9 @@ jobs:
             ./standalone/pruntime/bin/pruntime
             ./standalone/pruntime/bin/pruntime.manifest
             ./standalone/pruntime/bin/Rocket.toml
+      - name: triggers workflow run
+        run: |
+          ls -R
 
   e2e-test:
     name: Run E2E tests
